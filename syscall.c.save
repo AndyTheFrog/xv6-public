@@ -96,7 +96,8 @@ extern int sys_mkdir(void);
 extern int sys_mknod(void);
 extern int sys_open(void);
 extern int sys_pipe(void);
-extern int sys_read(void);
+extern int 
+sys_read(void);
 extern int sys_sbrk(void);
 extern int sys_sleep(void);
 extern int sys_unlink(void);
@@ -105,7 +106,7 @@ extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_wcupa(void);
 extern int sys_getreadcount(void);
-extern int readcount;
+
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
